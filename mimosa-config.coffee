@@ -30,12 +30,7 @@ exports.config =
   bower:
     copy:
       mainOverrides:
-        "knockout.js":["knockout.js","knockout-2.3.0.debug.js"]
-        "bootstrap": [
-          "docs/assets/js/bootstrap.js"
-          "docs/assets/css/bootstrap.css"
-          "docs/assets/css/bootstrap-responsive.css"
-        ]
+        "knockout":["knockout.js","knockout.debug.js"]      
         "font-awesome": [
           { font: "../../font" }
           "css/font-awesome.css"
@@ -55,11 +50,10 @@ exports.config =
         folder:'stylesheets'
         output:'stylesheets/styles.css'
         order: [
-          'vendor/bootstrap/bootstrap.css'
-          'vendor/bootstrap/bootstrap-responsive.css'
+          'vendor/foundation/foundation.css'          
           'vendor/font-awesome/font-awesome.css'
           'vendor/durandal/durandal.css'
-          'starterkit.css'
+          'app.css'
         ]
       }
     ]
